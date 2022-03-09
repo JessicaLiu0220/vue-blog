@@ -1,6 +1,6 @@
-// import request from '@/helper/request.js'
-// import auth from '@/api/auth.js'
-// import blog from '@/api/blog.js'
+// import request from '../helper/request.js'
+// import auth from '../api/auth.js'
+// import blog from '../api/blog.js'
 
 // window.request = request
 // window.auth = auth
