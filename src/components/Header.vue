@@ -100,9 +100,7 @@ header.login {
     font-size: 40px;
     text-transform: uppercase;
     flex: 1;
-    a {
-      color: #fff;
-    }
+    color: #fff;
   }
 
   .edit {
