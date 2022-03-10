@@ -58,7 +58,7 @@ const router = new Router({
 })
 */
 
-const router = new Router({
+const router =  new Router({
   routes: [
     {
       path: '/',
@@ -100,7 +100,7 @@ const router = new Router({
 
 router.beforeEach((to, from, next) => {
   if (to.matched.some(record => record.meta.requiresAuth)) {
-    store.dispatch('checkLogin').then(isLogin => {
+    store.dispatch('checkLogin').then(isLogin=>{
       if (!isLogin) {
         next({
           path: '/login',
@@ -108,7 +108,7 @@ router.beforeEach((to, from, next) => {
         })
       } else {
         next()
-      }
+      }    
     })
   } else {
     next() // 确保一定要调用 next()

@@ -3,6 +3,7 @@
     <p>© xiedaimala.com 2018 wechat: xiedaimala01</p>
   </footer>
 </template>
+
 <style scoped>
 footer {
   align-self: end;
@@ -12,4 +13,5 @@ footer {
   padding: 10px;
   text-align: center;
 }
+
 </style>

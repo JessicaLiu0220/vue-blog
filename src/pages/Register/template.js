@@ -1,7 +1,7 @@
 import { mapActions } from 'vuex'
 
 export default {
-  data() {
+  data () {
     return {
       username: '',
       password: ''
@@ -12,9 +12,9 @@ export default {
     ...mapActions(['register']),
 
     onRegister() {
-      this.register({ username: this.username, password: this.password })
-        .then(() => {
-          this.$router.push({ path: '/' })
+      this.register({username: this.username, password: this.password})
+        .then(()=>{
+          this.$router.push({path: '/'})
         })
     }
   }

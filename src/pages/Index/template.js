@@ -1,6 +1,8 @@
 import blog from '@/api/blog.js'
+
+
 export default {
-  data() {
+  data () {
     return {
       blogs: [],
       total: 0,
@@ -26,7 +28,7 @@ export default {
         this.blogs = res.data
         this.total = res.total
         this.page = res.page
-        this.$router.push({ path: '/', query: { page: newPage } })
+        this.$router.push({ path: '/', query: { page: newPage}})
       })
     }
   }
