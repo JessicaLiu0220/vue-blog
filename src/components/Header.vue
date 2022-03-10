@@ -29,6 +29,7 @@
   </header>
 </template>
 
+
 <script>
 import auth from "@/api/auth";
 window.auth = auth;
@@ -69,7 +70,6 @@ header.no-login {
   justify-items: center;
 
   h1 {
-    color: #fff;
     font-size: 40px;
     margin: 60px 0 0 0;
     text-transform: uppercase;
@@ -97,10 +97,12 @@ header.login {
   h1 {
     margin: 0;
     padding: 0;
-    color: #fff;
     font-size: 40px;
     text-transform: uppercase;
     flex: 1;
+    a {
+      color: #fff;
+    }
   }
 
   .edit {
